@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/semester-projekt/images/shop.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ========== HEADER ========== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#logo {
+    float: left;
+    font-family: 'Zen Antique', serif;
+}
+
+h1 a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#cartLink {
+    float: right;
+    color: #CE8A42;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+#cartIcon {
+    width: 20px;
+    height: 20px;
+    background: url('/semester-projekt/images/shopping-cart.png') center center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#cartIcon:hover {
+    opacity: 0.6;
+}
+
+/* ========== MAIN CONTENT ========== */
+
+.main {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#pageTitle {
+    font-size: 36px;
+    font-family: 'Baskerville', serif;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin:auto;
+}
+
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+.productTitle {
+    flex: 1;
+    margin-right: 10px;
+    letter-spacing: 1.5px;
+    text-align: left;
+}
+
+.quantity,
+.price {
+    flex: 0 0 340px;
+    text-align: left;
+}
+
+.deleteButton {
+    background: none;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#totalPrice {
+    text-align: right;
+}
+
+/* ========== FOOTER ========== */
+
+#footerLinks {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+#go-back {
+    float:left;
+    color: #CE8A42;
+    text-decoration: none;
+    padding-left:50px;
+    font-size: 14px;
+}
+
+#checkoutButton {
+    float:right;
+    color: #CE8A42;
+    text-decoration: none;
+    padding-right:50px;
+    font-size: 14px;
+}

@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/semester-projekt/images/shop.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ========== HEADER ========== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#logo {
+    float: left;
+    font-family: 'Zen Antique', serif;
+}
+
+h1 a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#cartLink {
+    float: right;
+    color: #CE8A42;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+#cartIcon {
+    width: 20px;
+    height: 20px;
+    background: url('/semester-projekt/images/shopping-cart.png') center center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#cartIcon:hover {
+    opacity: 0.6;
+}
+
+/* ========== MAIN CONTENT ========== */
+
+.main {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 55vh;
+    padding-left: 50px;
+    padding-right:50px;
+    letter-spacing: 1.5px;
+}
+
+/* ========== FOOTER ========== */
+
+#footerLinks {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+#go-back {
+    float:left;
+    color: #CE8A42;
+    text-decoration: none;
+    padding-left:50px;
+    font-size: 14px;
+}

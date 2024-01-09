@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/semester-projekt/images/index.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ========== HEADER ========== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#logo {
+    float: left;
+    font-family: 'Zen Antique', serif;
+}
+
+h1 a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* ========== MAIN CONTENT ========== */
+
+.main {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 55vh;
+    padding-left: 50px;
+    padding-right:50px;
+}
+
+#big-text, #pet-name {
+    font-family: 'Baskerville', serif;
+}
+
+#question {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+#big-text {
+    font-size: 90px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#generate-name {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+#generatedName {
+    margin-top: 40px;
+    color: #CE8A42;
+    letter-spacing: 1.5px;
+}
+
+span {
+    font-size: 50px;
+    letter-spacing: 0px;
+}
+
+
+#buyGiftButton {
+    float: right;
+    background: none;
+    border: none;
+    color: #CE8A42;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+#generate-name:hover,
+#buyGiftButton:hover {
+    cursor: pointer;
+}
